@@ -1,0 +1,93 @@
+
+html{
+    background-color: #E6E8E6;
+}
+
+.main-container{
+    color: #FFFFFF;
+    margin: 1px;
+    text-align: center;
+    border-radius: 10px;
+    text-shadow: #fff 0 0 10px;
+    background-color: #DF2935;
+   
+}
+nav,span,a{
+    color: #FFFFFF;
+}
+.menu{
+    display: flex;
+    justify-content:left;
+}
+.menu a{
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+.menu a span{
+    transition: transform 0.2s ease-out;
+}
+.menu a span:first-child{
+    display: inline-block;
+    padding: 10px;
+}
+.menu a span:last-child{
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-150%);
+}
+.menu i{
+    color: #080708;
+    font-size: 30px;
+}
+.menu a:hover span:first-child{
+    transform: translateY(150%);
+}
+.menu a:hover span:last-child,
+.menu[data-animation] a:hover span:last-child{
+    transform: none;
+} 
+.menu[data-animation="to-top"] a span:last-child{
+    transform: translateY(100%);
+    }
+.menu[data-animation="to-top"] a:hover span:first-child{
+    transform: translateY(-100%);
+}
+.menu[data-animation="to-right"] a span:last-child{
+    transform: translateX(-100%);
+}
+.menu[data-animation="to-right"] a:hover span:first-child{
+    transform: translateX(100%);
+}
+
+.menu[data-animation="to-left"] a span:last-child{
+    transform: translateX(100%);
+}
+
+.menu[data-animation="to-left"] a:hover span:first-child{
+    transform: translateX(-100%);
+}
+
+article{ 
+    padding: 1rem;
+    height: 600px;
+    color: #FFFFFF; 
+    text-align: LEFT;
+    display: inline-flex;
+    width: 98%;
+    border-radius: 10px;
+    background-color: #3772FF;
+}
+section,iframe{
+    padding: 10px 50px 30px;
+}
+
+h2{
+    text-align: center;
+}
