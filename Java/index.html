@@ -7,14 +7,16 @@
     <title>Problema JavaScript</title>
     <link rel="stylesheet" href="./css/masterstyle.css">
     <script src="./js/java.js" ></script>
+    <link rel="shortcut icon" href="icono.png">
 </head>
 <body oncopy="return false" onpaste="return false" ondragstart="return false;" ondrop="return false;">
     <div class="main-container">
     <h1>Ejercicios JavaScript</h1>
     <h2>Coronado Segundo Juan Yael 4IV9</h2>
+    <h3>Problemas secuenciales</h3>
     </div>
             
-
+    <br>
     </div>
     <div class="form">
         <h1>Problema 1</h1>
@@ -25,59 +27,66 @@
     <form method="get" name="formulario1">
         <table align="center">
             <tr>
-                <td class="td_up" >Introduce la cantidad a invertir</td>
-                <td class="td_down" ><input type="text" name="cantidad"
+                <td>Introduce la cantidad a invertir</td>
+                <td><input type="text" name="cantidad"
                     onkeypress="return validarn(event)" ></td>
             
-                <td class="td_down" > <input type="button" name="enviar"
-                    value="Interes" onclick="interes()"> </td>
             </tr>
             <tr>
-                <td class="td_up" >Su saldo total con interes del 2% es de:</td>
-                <td class="td_down" ><input type="text" name="sueldoti" id="cantidadti"
+                <td>Su saldo total con interes del 2% es de:</td>
+                <td><input type="text" name="sueldoti" id="cantidadti"
                     readonly="readonly" class="input_text"></td>
-                <td class="td_down" ><input type="button" name="borrard" 
-                    value="Borrar"
-                    onclick="borrar()"></td>
+               
+            </tr>
+            <tr>
+
+                <td> <input type="button" name="enviar"
+                    value="Calcular" onclick="interes()"> </td>
+                <td><input type="button" name="borrard" 
+                        value="Borrar"
+                        onclick="borrar()"></td>
             </tr>
         </table>
 
-    </form>
-    </div>
-    <br>
-    <div class="form">
-        <h1>Problema 2</h1>
-    <p>
-        Se dara un 10% de comision extra por las ventas y se le sumara al sueldo
-    </p>
-    <h3>Sueldo=$4000</h3>
-    <form method="get" name="formulario2">
+        </form>
+        </div>
+        <br>
+        <div class="form">
+            <h1>Problema 2</h1>
+        <p>
+            Se dara un 10% de comision extra por las ventas y se le sumara al sueldo
+        </p>
+        <h3>Sueldo=$4000</h3>
+        <form method="get" name="formulario2">
         <table align="center">
             <tr>
-                <td class="td_up" >Ingrese la primer venta</td>
-                <td class="td_down" ><input type="text" name="venta1"
+                <td></td>Ingrese la primer venta</td>
+                <td><input type="text" name="venta1"
                     onkeypress="return validarn(event)"></td>
             </tr>
             <tr>
-                <td class="td_up" >Ingrese la segunda venta</td>
-                <td class="td_down" ><input type="text" name="venta2"
+                <td>Ingrese la segunda venta</td>
+                <td><input type="text" name="venta2"
                     onkeypress="return validarn(event)"></td> 
             </tr>
             <tr>
-                <td class="td_up" >Ingrese la tercer venta</td>
-                <td class="td_down" ><input type="text" name="venta3"
-                    onkeypress="return validarn(event)"></td>
-            
-                <td class="td_down" > <input type="button" name="enviar"
-                    value="Calcular" onclick="sueldoycomi()"> </td>
+                <td>Ingrese la tercer venta</td>
+                <td><input type="text" name="venta3"
+                    onkeypress="return validarn(event)"></td>    
             </tr>
             <tr>
-                <td class="td_up" >Su sueldo más comisiones es de:</td>
-                <td class="td_down" ><input type="text" name="total"
+                <td>Su sueldo más comisiones es de:</td>
+                <td><input type="text" name="total"
                     readonly="readonly" class="input_text"></td>
+                
+            </tr>
+            <tr>
+
+                <td class="td_down" > <input type="button" name="enviar"
+                    value="Calcular" onclick="sueldoycomi()"> </td>
                 <td class="td_down" ><input type="button" name="borrard" 
-                    value="Borrar"
-                    onclick="borrar1()"></td>
+                        value="Borrar"
+                        onclick="borrar1()"></td>
             </tr>
         </table>
 
@@ -96,16 +105,20 @@
                 <td class="td_up" >Ingrese el total de su compra</td>
                 <td class="td_down" ><input type="text" name="compra"
                     onkeypress="return validarn(event)"></td>
-                <td class="td_down" > <input type="button" name="enviar"
-                    value="Calcular" onclick="descuentazo()"> </td>
+               
             </tr>
             <tr>
                 <td class="td_up" >Aplicando el descuento debe pagar:</td>
                 <td class="td_down" ><input type="text" name="descuento"
                     readonly="readonly" class="input_text"></td>
+              
+            </tr>
+            <tr>
+                <td class="td_down" > <input type="button" name="enviar"
+                    value="Calcular" onclick="descuentazo()"> </td>
                 <td class="td_down" ><input type="button" name="borrard" 
-                    value="Borrar"
-                    onclick="borrar2()"></td>
+                        value="Borrar"
+                        onclick="borrar2()"></td>
             </tr>
         </table>
 
@@ -135,21 +148,114 @@
                 <td class="td_down" ><input type="text" name="job"
                     onkeypress="return validarn(event)"></td>
             
-                <td class="td_down" > <input type="button" name="enviar"
-                    value="Calcular" onclick="algoritmos()"> </td>
             </tr>
             <tr>
                 <td class="td_up" >La calificación final es:</td>
                 <td class="td_down" ><input type="text" name="califi"
                     readonly="readonly" class="input_text"></td>
+              
+            </tr>
+            <tr>
+                <td class="td_down" > <input type="button" name="enviar"
+                    value="Calcular" onclick="algoritmos()"> </td>
                 <td class="td_down" ><input type="button" name="borrard" 
-                    value="Borrar"
-                    onclick="borrar3()"></td>
+                        value="Borrar"
+                        onclick="borrar3()"></td>
             </tr>
         </table>
 
     </form>
     </div>
+    <br>
+    <div class="form">
+        <h1>Problema 5</h1>
+    <p>
+       Se conseguira los porcentajes de hombre y mujeres estudiantes   </p>
+       <h4> Al ingresar las mujeres el resto seran hombres</h4>
+ 
+   
+    <form method="get" name="formulario5">
+        <table align="center">
+            <tr>
+                <td class="td_up" >Ingrese la cantidad de alumnos</td>
+                <td class="td_down" ><input type="text" name="alumnos"
+                    onkeypress="return validarn(event)"></td>
+            </tr>
+            <tr>
+                <td class="td_up" >Ingrese la cantidad de mujeres</td>
+                <td class="td_down" ><input type="text" name="M"
+                    onkeypress="return validarn(event)"></td> 
+            </tr>
+           
+            <tr>
+                <td class="td_up" >Porcentaje mujeres:</td>
+                <td class="td_down" ><input type="text" name="Muj"
+                    readonly="readonly" class="input_text"></td>
+            </tr>
+                    <td class="td_up" >Porcentaje hombres:</td>
+                <td class="td_down" ><input type="text" name="Hom"
+                    readonly="readonly" class="input_text"></td>
+               
+            </tr>
+            <tr>
+                
+                <td class="td_down" > <input type="button" name="enviar"
+                    value="Calcular" onclick="porcentaje()"> </td>
+                <td class="td_down" ><input type="button" name="borrard" 
+                        value="Borrar"
+                        onclick="borrar4()"></td>
+            </tr>
+        </table>
+
+    </form>
+    </div>
+    <br>
+    </div>
+    <div class="form">
+        <h1>Problema 6</h1>
+    <p>
+        Se calculara su edad,ingrese su fecha de nacimiento
+    </p>
+    <form method="get" name="formulario6">
+    <table align="center">
+        <tr>
+            <td class="td_up" >Ingrese el año</td>
+            <td class="td_down" ><input type="text" name="ano"
+                onkeypress="return validarn(event)" ></td>
+        </tr>
+        <tr>
+            <td class="td_up" >Ingrese el mes</td>
+            <td class="td_down" ><input type="text" name="mes"
+                onkeypress="return validarn(event)" ></td>
+        </tr>
+        <tr>
+            <td class="td_up" >Ingrese el dia</td>
+            <td class="td_down" ><input type="text" name="dia"
+                onkeypress="return validarn(event)" ></td>
+        </tr>
+        <tr>
+            <td class="td_up" >Su edad es:</td>
+            <td class="td_down" ><input type="text" name="edad"
+                readonly="readonly" class="input_text"></td>
+           
+        </tr>
+        <tr>
+            <td class="td_down"> <input type="button" name="enviar"
+                value="Calcular" onclick="calcuedad()"> </td>
+                <td class="td_down" ><input type="button" name="borrard" 
+                    value="Borrar"
+                    onclick="borrar5()"></td>
+        </tr>
+    </table>
+
+    </form>
+    </div>
     
 </body>
+<footer>
+    <div class="form"> 
+        <a href="pagina2.html">
+        <h2>Ir a problemas selectivos compuestos</h2>
+        </a>
+    </div></footer>
 </html>

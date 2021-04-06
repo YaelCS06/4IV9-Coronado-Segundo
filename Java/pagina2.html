@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problemas selectivos</title>
+    <link rel="stylesheet" href="./css/masterstyle.css">
+    <script src="./js/java1.js" ></script>
+    <link rel="shortcut icon" href="icono.png">
+</head>
+<body oncopy="return false" onpaste="return false" ondragstart="return false;" ondrop="return false;">
+    <div class="main-container">
+    <h1>Ejercicios JavaScript</h1>
+    <h2>Coronado Segundo Juan Yael 4IV9</h2>
+    <h3>Problemas selectivos compuestos</h3>
+    </div>
+
+    <div class="form">
+        <h1>Problema 1</h1>
+    <p>
+        Ingrese dos numeros si son iguales que se multipliquen,si el primero es mayor que el segundo se restan y si no los suma
+    </p>
+    <form method="get" name="formulario1">
+        <table align="center">
+            <tr>
+                <td>Ingrese el primer numero</td>
+                <td><input type="text" name="num1"
+                    onkeypress="return validarn(event)" ></td>
+            
+            </tr>
+            <tr>
+                <td>Ingrese el segundo numero</td>
+                <td><input type="text" name="num2"
+                    onkeypress="return validarn(event)" ></td>
+            
+            </tr>
+            <tr>
+                <td>Resultado:</td>
+                <td><input type="text" name="Resultado"
+                    readonly="readonly" class="input_text"></td>
+               
+            </tr>
+            <tr>
+                <td> <input type="button" name="enviar"
+                    value="Calcular" onclick="numeros()"> </td>
+                <td><input type="button" name="borrard" 
+                        value="Borrar"
+                        onclick="borrar()"></td>
+            </tr>
+        </table>
+
+        </form>
+        </div>
+        <br>
+        <div class="form">
+            <h1>Problema 2</h1>
+        <p>
+            De tres numeros se determinara el mayor
+        </p>
+        <form method="get" name="formulario2">
+            <table align="center">
+                <tr>
+                    <td>Ingrese el primer numero</td>
+                    <td><input type="text" name="numr1"
+                        onkeypress="return validarn(event)" ></td>
+                
+                </tr>
+                <tr>
+                    <td>Ingrese el segundo numero</td>
+                    <td><input type="text" name="numr2"
+                        onkeypress="return validarn(event)" ></td>
+                
+                </tr>
+                <tr>
+                    <td>Ingrese el tercer numero</td>
+                    <td><input type="text" name="numr3"
+                        onkeypress="return validarn(event)" ></td>
+                
+                </tr>
+                <tr>
+                    <td>El mayor numero es:</td>
+                    <td><input type="text" name="elmayor"
+                        readonly="readonly" class="input_text"></td>
+                   
+                </tr>
+                <tr>
+                    <td> <input type="button" name="enviar"
+                        value="Calcular" onclick="mayorque()"> </td>
+                    <td><input type="button" name="borrard" 
+                            value="Borrar"
+                            onclick="borrar1()"></td>
+                </tr>
+            </table>
+    
+            </form>
+            </div>
+            <br>
+            <div class="form">
+                <h1>Problema 2</h1>
+            <p>
+                De tres numeros se determinara el mayor
+            </p>
+            <form method="get" name="formulario2">
+                <table align="center">
+                    <tr>
+                        <td>Ingrese el primer numero</td>
+                        <td><input type="text" name="numr1"
+                            onkeypress="return validarn(event)" ></td>
+                    
+                    </tr>
+                    <tr>
+                        <td>Ingrese el segundo numero</td>
+                        <td><input type="text" name="numr2"
+                            onkeypress="return validarn(event)" ></td>
+                    
+                    </tr>
+                    <tr>
+                        <td>Ingrese el tercer numero</td>
+                        <td><input type="text" name="numr3"
+                            onkeypress="return validarn(event)" ></td>
+                    
+                    </tr>
+                    <tr>
+                        <td>El mayor numero es:</td>
+                        <td><input type="text" name="elmayor"
+                            readonly="readonly" class="input_text"></td>
+                       
+                    </tr>
+                    <tr>
+                        <td> <input type="button" name="enviar"
+                            value="Calcular" onclick="mayorque()"> </td>
+                        <td><input type="button" name="borrard" 
+                                value="Borrar"
+                                onclick="borrar1()"></td>
+                    </tr>
+                </table>
+        
+                </form>
+                </div>
+                <br>
+</body>
+<footer>
+    
+    <div class="form"> 
+        <a href="index.html">
+        <h2>Ir a problemas secuenciales</h2>
+        </a>
+    </div>
+</footer>
+</html>

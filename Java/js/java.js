@@ -80,3 +80,42 @@ function borrar3(){
     document.formulario4.job.value="";
     document.formulario4.califi.value="";
 }
+function porcentaje(){
+    if(document.formulario5.alumnos.value/document.formulario5.alumnos.value==1&&document.formulario5.M.value/document.formulario5.M.value==1){
+    var todos=document.formulario5.alumnos.value;
+    var muje=document.formulario5.M.value;
+    var pMuj=(parseInt(muje)*100)/parseInt(todos);
+    var pHom=100-pMuj;
+    document.formulario5.Muj.value=pMuj+"%";
+    document.formulario5.Hom.value=pHom+"%";
+    }else{
+    window.alert("No ingresó una cantidad")
+    }
+}
+function borrar4(){
+    document.formulario5.alumnos.value="";
+    document.formulario5.M.value="";    
+    document.formulario5.Muj.value="";
+    document.formulario5.Hom.value="";
+}
+function calcuedad(){
+    if(document.formulario6.ano.value/document.formulario6.ano.value==1&&document.formulario6.mes.value/document.formulario6.mes.value==1&&document.formulario6.dia.value/document.formulario6.dia.value==1){
+    var today = new Date();
+    var anos = today.getFullYear() - parseInt(document.formulario6.ano.value);
+    var mon=parseInt(document.formulario6.mes.value);
+    var day=parseInt(document.formulario6.dia.value);
+    if (mon==(today.getMonth()+1)&&day<(today.getDay()+4)){
+        document.formulario6.edad.value=anos-1;
+    }else{
+        document.formulario6.edad.value=anos;
+    }
+    }else{
+        window.alert("No lleno un campo")
+        }
+}
+function borrar5(){
+    document.formulario6.ano.value="";
+    document.formulario6.mes.value="";    
+    document.formulario6.dia.value="";
+    document.formulario6.edad.value="";
+}
