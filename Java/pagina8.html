@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/masterstyle.css">
+    <title>Problema JavaScript</title>
+    <script src="./js/java.js" ></script>
+    <link rel="shortcut icon" href="icono.png">
+</head>
+<body oncopy="return false" onpaste="return false" ondragstart="return false;" ondrop="return false;" onkeypress="if (event.keyCode == 13) mayorque()">
+    <div class="main-container">
+        <h1>Ejercicios JavaScript</h1>
+        <h2>Coronado Segundo Juan Yael 4IV9</h2>
+        <nav class="navegacion">
+            <ul class="menu">
+                <li> <a href="index.html">Inicio</a> </li>
+                <li> <a href="">Ejercicios</a> 
+                    <ul class="submenu">
+                        <li> <a href="pagina1.html">Ejercicio 1</a></li>
+                        <li> <a href="pagina2.html">Ejercicio 2</a></li>
+                        <li> <a href="pagina3.html">Ejercicio 3</a></li>
+                        <li> <a href="pagina4.html">Ejercicio 4</a></li>
+                        <li> <a href="pagina5.html">Ejercicio 5</a></li>
+                        <li> <a href="pagina6.html">Ejercicio 6</a></li>
+                        <li> <a href="pagina7.html">Ejercicio 7</a></li>
+                        <li> <a href="pagina8.html">Ejercicio 8</a></li>
+                        <li> <a href="pagina9.html">Ejercicio 9</a></li>
+                        <li> <a href="pagina10.html">Ejercicio 10</a></li>
+                        
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        </div>
+        <div class="form">
+            <h1>Ejercicio 8</h1>
+        <p>
+            De tres numeros se determinara el mayor
+        </p>
+        <form method="get" name="formulario2">
+            <table align="center">
+                <tr>
+                    <td>Ingrese el primer numero</td>
+                    <td><input type="text" name="numr1"
+                        onkeypress="return validarn(event)" ></td>
+                
+                </tr>
+                <tr>
+                    <td>Ingrese el segundo numero</td>
+                    <td><input type="text" name="numr2"
+                        onkeypress="return validarn(event)" ></td>
+                
+                </tr>
+                <tr>
+                    <td>Ingrese el tercer numero</td>
+                    <td><input type="text" name="numr3"
+                        onkeypress="return validarn(event)" ></td>
+                
+                </tr>
+                <tr>
+                    <td>El mayor numero es:</td>
+                    <td><input type="text" name="elmayor"
+                        readonly="readonly" class="input_text"></td>
+                   
+                </tr>
+                <tr>
+                    <td> <input type="button" name="enviar"
+                        value="Calcular" onclick="mayorque()"> </td>
+                    <td><input type="reset" name="borrard" 
+                            value="Borrar"
+                            ></td>
+                </tr>
+            </table>
+    
+            </form>
+            </div>
+</body>
+</html>

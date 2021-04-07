@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Problemas JavaScript</title>
+    <title>Problema JavaScript</title>
     <link rel="stylesheet" href="./css/masterstyle.css">
+    <script src="./js/java.js" ></script>
     <link rel="shortcut icon" href="icono.png">
 </head>
-<body oncopy="return false" onpaste="return false" ondragstart="return false;" ondrop="return false;">
+<body oncopy="return false" onpaste="return false" ondragstart="return false;" ondrop="return false;" onkeypress="if (event.keyCode == 13) interes()">
     <div class="main-container">
     <h1>Ejercicios JavaScript</h1>
     <h2>Coronado Segundo Juan Yael 4IV9</h2>
@@ -32,10 +33,39 @@
             </li>
         </ul>
     </nav>
-    
+</div>
+    <div class="form">
+        <h1>Ejercicio 1</h1>
+    <p>
+        Se desea crear un formulario capaz de calcular
+        el interes al 2% mensual sobre una cantidad a invertir.
+    </p>
+    <form method="get" name="formulario1">
+        <table align="center">
+            <tr>
+                <td>Introduce la cantidad a invertir</td>
+                <td><input type="text" name="cantidad"
+                    onkeypress="return validarn(event)" ></td>
             
-  
-    
-</body>
+            </tr>
+            <tr>
+                <td>Su saldo total con interes del 2% es de:</td>
+                <td><input type="text" name="sueldoti" id="cantidadti"
+                    readonly="readonly" class="input_text"></td>
+               
+            </tr>
+            <tr>
 
+                <td> <input type="button" name="enviar"
+                    value="Calcular" onclick="interes()"> </td>
+                <td><input type="reset" name="borrard" 
+                        value="Borrar"
+                        ></td>
+            </tr>
+        </table>
+
+        </form>
+    </div>
+
+</body>
 </html>

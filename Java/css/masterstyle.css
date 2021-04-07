@@ -1,13 +1,58 @@
 .main-container{
+    float: left;
     position: relative;
     background: #FFFFFF;
     max-width: 600px;
     margin: 0 auto 100px;
     padding: 45px;
-    text-align: center;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
+.menu{
+    padding-left: 0;
+    background-color: black;
+   
+}
+.navegacion{
+    width: auto;
+}
+.navegacion ul{
+    display: block;
+    list-style: none;
+}
+.menu > li{
+    display: inline-block;
+}
+.menu > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+.menu li a:hover{
+    color: #76b852;
+    transition: all .5s;  
+}
+.submenu{
+    padding-left: 0px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.685);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+.submenu li a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+.menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+}
+
 .form {
+    float: right;
     position: relative;
     background: #FFFFFF;
     max-width: 600px;
@@ -18,7 +63,7 @@
 }
  
 body {
-    background: #76b852; /* fallback for old browsers */
+    background: #76b852; 
     background: -webkit-linear-gradient(right, #76b852, #8DC26F);
     background: -moz-linear-gradient(right, #76b852, #8DC26F);
     background: -o-linear-gradient(right, #76b852, #8DC26F);
@@ -28,6 +73,10 @@ body {
     -moz-osx-font-smoothing: grayscale;      
 }
 h2{
-    text-align: center;
+   
     color: #76b852;
+}
+.menu{
+    font-size: 22px;
+    font-family: 'Arial Black';
 }

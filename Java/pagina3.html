@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Problemas JavaScript</title>
+    <title>Problema JavaScript</title>
     <link rel="stylesheet" href="./css/masterstyle.css">
+    <script src="./js/java.js" ></script>
     <link rel="shortcut icon" href="icono.png">
 </head>
-<body oncopy="return false" onpaste="return false" ondragstart="return false;" ondrop="return false;">
+<body oncopy="return false" onpaste="return false" ondragstart="return false;" ondrop="return false;" onkeypress="if (event.keyCode == 13) descuentazo()"> 
     <div class="main-container">
     <h1>Ejercicios JavaScript</h1>
     <h2>Coronado Segundo Juan Yael 4IV9</h2>
@@ -32,10 +33,39 @@
             </li>
         </ul>
     </nav>
+    </div>
+   
+    <div class="form">
+        <h1>Ejercicio 3</h1>
+    <p>
+        Se hara un descuento de 15% sobre el total de la compra
+    </p>
     
-            
-  
-    
-</body>
+    <form method="get" name="formulario3">
+        <table align="center" >
+            <tr>
+                <td class="td_up" >Ingrese el total de su compra</td>
+                <td class="td_down" ><input type="text" name="compra"
+                    onkeypress="return validarn(event)"></td>
+               
+            </tr>
+            <tr>
+                <td class="td_up" >Aplicando el descuento debe pagar:</td>
+                <td class="td_down" ><input type="text" name="descuento"
+                    readonly="readonly" class="input_text"></td>
+              
+            </tr>
+            <tr>
+                <td class="td_down" > <input type="button" name="enviar"
+                    value="Calcular" onclick="descuentazo()"> </td>
+                <td class="td_down" ><input type="reset" name="borrard" 
+                        value="Borrar"
+                        ></td>
+            </tr>
+        </table>
 
+    </form>
+    </div>
+
+</body>
 </html>

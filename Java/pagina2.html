@@ -4,148 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Problemas selectivos</title>
+    <title>Problema JavaScript</title>
     <link rel="stylesheet" href="./css/masterstyle.css">
-    <script src="./js/java1.js" ></script>
+    <script src="./js/java.js" ></script>
     <link rel="shortcut icon" href="icono.png">
 </head>
-<body oncopy="return false" onpaste="return false" ondragstart="return false;" ondrop="return false;">
+<body oncopy="return false" onpaste="return false" ondragstart="return false;" ondrop="return false;" onkeypress="if (event.keyCode == 13) sueldoycomi()">
     <div class="main-container">
-    <h1>Ejercicios JavaScript</h1>
-    <h2>Coronado Segundo Juan Yael 4IV9</h2>
-    <h3>Problemas selectivos compuestos</h3>
-    </div>
-
-    <div class="form">
-        <h1>Problema 1</h1>
-    <p>
-        Ingrese dos numeros si son iguales que se multipliquen,si el primero es mayor que el segundo se restan y si no los suma
-    </p>
-    <form method="get" name="formulario1">
-        <table align="center">
-            <tr>
-                <td>Ingrese el primer numero</td>
-                <td><input type="text" name="num1"
-                    onkeypress="return validarn(event)" ></td>
-            
-            </tr>
-            <tr>
-                <td>Ingrese el segundo numero</td>
-                <td><input type="text" name="num2"
-                    onkeypress="return validarn(event)" ></td>
-            
-            </tr>
-            <tr>
-                <td>Resultado:</td>
-                <td><input type="text" name="Resultado"
-                    readonly="readonly" class="input_text"></td>
-               
-            </tr>
-            <tr>
-                <td> <input type="button" name="enviar"
-                    value="Calcular" onclick="numeros()"> </td>
-                <td><input type="button" name="borrard" 
-                        value="Borrar"
-                        onclick="borrar()"></td>
-            </tr>
-        </table>
-
-        </form>
+        <h1>Ejercicios JavaScript</h1>
+        <h2>Coronado Segundo Juan Yael 4IV9</h2>
+        <nav class="navegacion">
+            <ul class="menu">
+                <li> <a href="index.html">Inicio</a> </li>
+                <li> <a href="">Ejercicios</a> 
+                    <ul class="submenu">
+                        <li> <a href="pagina1.html">Ejercicio1</a></li>
+                        <li> <a href="pagina2.html">Ejercicio2</a></li>
+                        <li> <a href="pagina3.html">Ejercicio3</a></li>
+                        <li> <a href="pagina4.html">Ejercicio4</a></li>
+                        <li> <a href="pagina5.html">Ejercicio5</a></li>
+                        <li> <a href="pagina6.html">Ejercicio6</a></li>
+                        <li> <a href="pagina7.html">Ejercicio7</a></li>
+                        <li> <a href="pagina8.html">Ejercicio8</a></li>
+                        <li> <a href="pagina9.html">Ejercicio9</a></li>
+                        <li> <a href="pagina10.html">Ejercicio10</a></li>
+                        
+                    </ul>
+                </li>
+            </ul>
+        </nav>
         </div>
-        <br>
-        <div class="form">
-            <h1>Problema 2</h1>
-        <p>
-            De tres numeros se determinara el mayor
-        </p>
-        <form method="get" name="formulario2">
+       
+            
+            <div class="form">
+                <h1>Ejercicio 2</h1>
+            <p>
+                Se dara un 10% de comision extra por las ventas y se le sumara al sueldo
+            </p>
+            <h3>Sueldo=$4000</h3>
+            <form method="get" name="formulario2">
             <table align="center">
                 <tr>
-                    <td>Ingrese el primer numero</td>
-                    <td><input type="text" name="numr1"
-                        onkeypress="return validarn(event)" ></td>
-                
+                    <td>Ingrese la primer venta</td>
+                    <td><input type="text" name="venta1"
+                        onkeypress="return validarn(event)"></td>
                 </tr>
                 <tr>
-                    <td>Ingrese el segundo numero</td>
-                    <td><input type="text" name="numr2"
-                        onkeypress="return validarn(event)" ></td>
-                
+                    <td>Ingrese la segunda venta</td>
+                    <td><input type="text" name="venta2"
+                        onkeypress="return validarn(event)"></td> 
                 </tr>
                 <tr>
-                    <td>Ingrese el tercer numero</td>
-                    <td><input type="text" name="numr3"
-                        onkeypress="return validarn(event)" ></td>
-                
+                    <td>Ingrese la tercer venta</td>
+                    <td><input type="text" name="venta3"
+                        onkeypress="return validarn(event)"></td>    
                 </tr>
                 <tr>
-                    <td>El mayor numero es:</td>
-                    <td><input type="text" name="elmayor"
+                    <td>Su sueldo más comisiones es de:</td>
+                    <td><input type="text" name="total"
                         readonly="readonly" class="input_text"></td>
-                   
+                    
                 </tr>
                 <tr>
-                    <td> <input type="button" name="enviar"
-                        value="Calcular" onclick="mayorque()"> </td>
-                    <td><input type="button" name="borrard" 
+    
+                    <td class="td_down" > <input type="button" name="enviar"
+                        value="Calcular" onclick="sueldoycomi()"> </td>
+                    <td class="td_down" ><input type="reset" name="borrard" 
                             value="Borrar"
-                            onclick="borrar1()"></td>
+                            ></td>
                 </tr>
             </table>
     
-            </form>
-            </div>
-            <br>
-            <div class="form">
-                <h1>Problema 2</h1>
-            <p>
-                De tres numeros se determinara el mayor
-            </p>
-            <form method="get" name="formulario2">
-                <table align="center">
-                    <tr>
-                        <td>Ingrese el primer numero</td>
-                        <td><input type="text" name="numr1"
-                            onkeypress="return validarn(event)" ></td>
-                    
-                    </tr>
-                    <tr>
-                        <td>Ingrese el segundo numero</td>
-                        <td><input type="text" name="numr2"
-                            onkeypress="return validarn(event)" ></td>
-                    
-                    </tr>
-                    <tr>
-                        <td>Ingrese el tercer numero</td>
-                        <td><input type="text" name="numr3"
-                            onkeypress="return validarn(event)" ></td>
-                    
-                    </tr>
-                    <tr>
-                        <td>El mayor numero es:</td>
-                        <td><input type="text" name="elmayor"
-                            readonly="readonly" class="input_text"></td>
-                       
-                    </tr>
-                    <tr>
-                        <td> <input type="button" name="enviar"
-                            value="Calcular" onclick="mayorque()"> </td>
-                        <td><input type="button" name="borrard" 
-                                value="Borrar"
-                                onclick="borrar1()"></td>
-                    </tr>
-                </table>
-        
-                </form>
-                </div>
-                <br>
+        </form>
+</div>
+
 </body>
-<footer>
-    
-    <div class="form"> 
-        <a href="index.html">
-        <h2>Ir a problemas secuenciales</h2>
-        </a>
-    </div>
-</footer>
+
 </html>

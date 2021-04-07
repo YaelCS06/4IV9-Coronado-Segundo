@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Problemas JavaScript</title>
+    <title>Problema JavaScript</title>
     <link rel="stylesheet" href="./css/masterstyle.css">
+    <script src="./js/java.js" ></script>
     <link rel="shortcut icon" href="icono.png">
 </head>
-<body oncopy="return false" onpaste="return false" ondragstart="return false;" ondrop="return false;">
+<body oncopy="return false" onpaste="return false" ondragstart="return false;" ondrop="return false;"   onkeypress="if (event.keyCode == 13) calcuedad()">
     <div class="main-container">
     <h1>Ejercicios JavaScript</h1>
     <h2>Coronado Segundo Juan Yael 4IV9</h2>
@@ -32,10 +33,35 @@
             </li>
         </ul>
     </nav>
-    
-            
-  
-    
-</body>
+    </div>
+    <div class="form">
+        <h1>Ejercicio 6</h1>
+    <p>
+        Se calculara su edad,ingrese su fecha de nacimiento
+    </p>
+    <form method="get" name="formulario6">
+    <table align="center">
+        <tr>
+            <td class="td_up" >Ingrese el año</td>
+            <td class="td_down" ><input type="date" name="fecha"
+                onkeypress="return validarn(event)" ></td>
+        </tr>
 
+        <tr>
+            <td class="td_up" >Su edad es:</td>
+            <td class="td_down" ><input type="text" name="edad"
+                readonly="readonly" class="input_text"></td>
+           
+        </tr>
+        <tr>
+            <td class="td_down"> <input type="button" name="enviar"
+                value="Calcular" onclick="calcuedad()"> </td>
+                <td class="td_down" ><input type="reset" name="borrard" 
+                    value="Borrar"></td>
+        </tr>
+    </table>
+
+    </form>
+    </div>
+</body>
 </html>

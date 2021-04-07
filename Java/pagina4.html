@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema JavaScript</title>
+    <link rel="stylesheet" href="./css/masterstyle.css">
+    <script src="./js/java.js" ></script>
+    <link rel="shortcut icon" href="icono.png">
+</head>
+<body oncopy="return false" onpaste="return false" ondragstart="return false;" ondrop="return false;" onkeypress="if (event.keyCode == 13) algoritmos()">
+    <div class="main-container">
+    <h1>Ejercicios JavaScript</h1>
+    <h2>Coronado Segundo Juan Yael 4IV9</h2>
+    <nav class="navegacion">
+        <ul class="menu">
+            <li> <a href="index.html">Inicio</a> </li>
+            <li> <a href="">Ejercicios</a> 
+                <ul class="submenu">
+                    <li> <a href="pagina1.html">Ejercicio 1</a></li>
+                    <li> <a href="pagina2.html">Ejercicio 2</a></li>
+                    <li> <a href="pagina3.html">Ejercicio 3</a></li>
+                    <li> <a href="pagina4.html">Ejercicio 4</a></li>
+                    <li> <a href="pagina5.html">Ejercicio 5</a></li>
+                    <li> <a href="pagina6.html">Ejercicio 6</a></li>
+                    <li> <a href="pagina7.html">Ejercicio 7</a></li>
+                    <li> <a href="pagina8.html">Ejercicio 8</a></li>
+                    <li> <a href="pagina9.html">Ejercicio 9</a></li>
+                    <li> <a href="pagina10.html">Ejercicio 10</a></li>
+                    
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    </div>
+   
+
+    <div class="form">
+        <h1>Ejercicio 4</h1>
+    <p>
+       La calificacion se compone con 55% promedio,30% examen final y 15% trabajo final
+    </p>
+   
+    <form method="get" name="formulario4">
+        <table align="center">
+            <tr>
+                <td class="td_up" >Ingrese la calificacion promediada de los parciales</td>
+                <td class="td_down" ><input type="text" name="prom"
+                    onkeypress="return validarn(event)"></td>
+            </tr>
+            <tr>
+                <td class="td_up" >Ingrese la calificacion del examen</td>
+                <td class="td_down" ><input type="text" name="exam"
+                    onkeypress="return validarn(event)"></td> 
+            </tr>
+            <tr>
+                <td class="td_up" >Ingrese la calificacion del trabajo final</td>
+                <td class="td_down" ><input type="text" name="job"
+                    onkeypress="return validarn(event)"></td>
+            
+            </tr>
+            <tr>
+                <td class="td_up" >La calificación final es:</td>
+                <td class="td_down" ><input type="text" name="califi"
+                    readonly="readonly" class="input_text"></td>
+              
+            </tr>
+            <tr>
+                <td class="td_down" > <input type="button" name="enviar"
+                    value="Calcular" onclick="algoritmos()"> </td>
+                <td class="td_down" ><input type="reset" name="borrard" 
+                        value="Borrar"
+                 ></td>
+            </tr>
+        </table>
+
+    </form>
+    </div>
+</body>
+</html>
