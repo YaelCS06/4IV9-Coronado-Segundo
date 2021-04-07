@@ -1,12 +1,12 @@
 function validarn(e){
     var teclado = (document.all)?e.keyCode:e.which;
     if(teclado == 8) return true;
-    var patron = /[0-9\d .]/;
+    var patron = /[0-9]/;
     var prueba = String.fromCharCode(teclado);
     return patron.test(prueba);
 }
 function interes(){
-    if(document.formulario1.cantidad.value.trim()/document.formulario1.cantidad.value.trim()==1){
+    if(document.formulario1.cantidad.value/document.formulario1.cantidad.value==1){
         var valor = document.formulario1.cantidad.value;
         var resultado = parseInt(valor);
         var interes = resultado*0.2;
@@ -18,7 +18,7 @@ function interes(){
     }
 }
 function sueldoycomi(){
-    if(document.formulario2.venta1.value.trim()/document.formulario2.venta1.value.trim()==1&&document.formulario2.venta2.value.trim()/document.formulario2.venta2.value.trim()==1&&document.formulario2.venta3.value.trim()/document.formulario2.venta3.value.trim()==1){
+    if(document.formulario2.venta1.value/document.formulario2.venta1.value==1&&document.formulario2.venta2.value/document.formulario2.venta2.value==1&&document.formulario2.venta3.value/document.formulario2.venta3.value==1){
     var vent1=document.formulario2.venta1.value;
     var vent2=document.formulario2.venta2.value;
     var vent3=document.formulario2.venta3.value;
@@ -41,9 +41,9 @@ function descuentazo(){
     window.alert("No ingresó una cantidad validad")
 }
 }
-function borrar2(){
-    document.formulario3.compra.value="";
-    document.formulario3.descuento.value="";
+function easteregg(){
+    window.alert("Hola soy un easter egg me encontraste ☺")
+
 }
 function algoritmos(){
     if(document.formulario4.prom.value/document.formulario4.prom.value==1&&document.formulario4.exam.value/document.formulario4.exam.value==1&&document.formulario4.job.value/document.formulario4.job.value==1){
@@ -85,7 +85,7 @@ function calcuedad(){
     }}
 }
 function numeros(){
-    if(document.formulario1.num1.value.trim()==""||document.formulario1.num2.value.trim()==""){
+    if(document.formulario1.num1.value==""||document.formulario1.num2.value==""){
         alert("No ingreso un numero")
     }else{
     var num1 = parseInt(document.formulario1.num1.value);
@@ -105,13 +105,13 @@ function numeros(){
     }}
 }
 function mayorque(){
-    if (document.formulario2.numr1.value.trim()==""||document.formulario2.numr2.value.trim()==""||document.formulario2.numr1.value.trim()==""){
+    if (document.formulario2.numr1.value==""||document.formulario2.numr2.value==""||document.formulario2.numr3.value==""){
         alert("No ingreso un numero")
     }else{
     var num1 = parseInt(document.formulario2.numr1.value);
     var num2 = parseInt(document.formulario2.numr2.value);
     var num3 = parseInt(document.formulario2.numr3.value);
-
+    
     if(num1>num2&&num1>num3){
         document.formulario2.elmayor.value=num1;
     }else{
@@ -121,13 +121,13 @@ function mayorque(){
         if(num3>num1&&num3>num2){
         document.formulario2.elmayor.value=num3;
         }else{
+        if(num3==num1&&num3==num2){
         window.alert("Ingreso numeros iguales");
         }
-        }
     }}
-}
+}}}
 function pagototal(){
-    if (document.formulario3.hrs.value.trim()==""){
+    if (document.formulario3.hrs.value==""){
         alert("No ingreso las horas")
     }else{
     var horas = parseInt(document.formulario3.hrs.value);
@@ -166,7 +166,7 @@ function pagototal(){
 }
 
 function utilidad(){
-    if (document.formulariof.tiempo.value.trim()==""){
+    if (document.formulariof.tiempo.value==""){
         alert("No ingreso los años")
     }else{
     var tiemp= parseInt(document.formulariof.tiempo.value);
@@ -192,4 +192,4 @@ function utilidad(){
     }
 
     }
-}}
+    }}
