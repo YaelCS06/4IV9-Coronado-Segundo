@@ -1,0 +1,110 @@
+*{
+
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #CDECF4;
+
+}
+
+h1{
+    background-color: #2592A7;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.container{
+    
+    width: 100%;
+    padding: 1rem;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    flex-flow: column;
+}
+
+.problema-container{
+    background-color: #BFDBF7;
+    text-align: center;
+    border-radius: 20px;
+    padding: 1rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.problema-title{
+    
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.problema-content{
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-flow: column;
+}
+
+input.problema-input{
+    padding: 1rem;
+    color: rgba(0,0,0,0.57);
+    background: none;
+    border: none;
+    width: 100;
+    border-bottom: 2px solid #1F7A8C;
+    
+}
+input.palabras{
+    padding: 1rem;
+    color: rgba(0,0,0,0.57);
+    background: none;
+    border: none;
+    width: 100;
+    border-bottom: 2px solid #1F7A8C;
+}
+button.problema-button{
+    border: none;
+    background-color:#1F7A8C;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0.8rem;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    
+}
+
+.problema-output{
+    width: 70%;
+    height: relative;
+    background-color: aliceblue;
+    color: rgba(0,0,0,0.70);
+    font-family: 'monoscape';
+    border: 1px solid #b4b4b4;
+    border-radius: 20px;
+    padding: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+table.problema-table{
+    margin: 1rem;
+    border: 1px solid rgb(208, 208, 208);
+}
+
+pre{
+    white-space:pre-wrap;
+    
+}
