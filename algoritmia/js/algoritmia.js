@@ -103,6 +103,7 @@ function problema3() {
     var separador = ","
     var cadenaADividir = document.querySelector('#p3-palabras').value;
     var arrayDepalabras = cadenaADividir.split(separador);
+    document.querySelector('#p3-output').textContent ="Aqui estan las respuestas ☻: ";
     for (var i=0; i < arrayDepalabras.length; i++) {
         var palabra = arrayDepalabras[i];
         if(palabra==""){
